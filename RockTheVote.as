@@ -151,7 +151,7 @@ void MapStart() {
 	DiffMapStart();
 }
 
-HookReturnCode MapChange() {
+HookReturnCode MapChange(const string& in szNextMap) {
 	writeActivePlayerStats();
 	g_player_activity.clear();
 	g_Scheduler.RemoveTimer(g_timer);

@@ -106,7 +106,7 @@ void voteCleanup() {
 	}
 }
 
-HookReturnCode MapChange() {
+HookReturnCode MapChange(const string& in szNextMap) {
 	g_Scheduler.RemoveTimer(g_menuTimer);
 	return HOOK_CONTINUE;
 }
